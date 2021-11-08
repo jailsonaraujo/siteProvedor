@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/favicon.png">
+    <title>solution</title>
+</head>
+<body>
+    <img id="imagensBody" src="imagens/bgBody.jpg" alt="">
+    <div id="container-pagina">   
+        <!-- Cabeçalho da pagina -->
+        <header>
+            <!-- menu -->
+            <nav id="navMenu">
+                <div id="containerMenu">
+                    <div id="logo">
+                        <img src="imagens/logo.png" alt="logo">
+                    </div>
+        
+                    <!-- Links do menu -->
+                    <ul class="linksMenu" id="lm">
+                        <li class="itensLinks"><a href="https://gesprov.solutiontelecom.com.br/central/login">Area do Cliente</a></li>
+                        <li class="itensLinks"><a href="#section-quemSomos">Quem somos!</a></li>
+                        <li class="itensLinks"><a href="#section-planos">Planos</a></li>
+                        <li class="itensLinks"><a href="#sessao-cobertura">Cobertura</a></li>
+                        <li class="itensLinks"><a href="#section-Time">Equipe</a></li>
+                        <li class="itensLinks"><a href="#section-contatos-principal">Contatos</a></li>
+                    </ul>
+                </div>
+
+                <!-- botao menu amburguer  -->
+                <div id="btnMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <figure id="figura-banner">
+                <img src="imagens/imgBanner1.jpg" id="bgBanner">
+            </figure>
+            
+        </header>
+
+        <!-- sessão quem somos ******************************************************-->
+        <section id="section-quemSomos">
+            <h1>Sobre nós</h1>
+            <div id="div-texto">
+            <p>Há 6 anos levando trasformção digital. Conectanto oportunidades, pessoas, lugares, ideias e negócios. 
+                Nossa missão é contribuir por meio do rápido e flexível atendimento do cliente, objetivando o oferecimento
+                do serviço de telecomunicações às circunstancias com maior presteza e dedicação, adequando os custos com prudência à todos.</p>
+            </div>
+            <figure id="figura">
+                <img src="imagens/compsom.png" >
+            </figure>
+        </section>
+
+        <!-- sessão dos cards com os planos ******************************************************-->
+        <section id="section-planos">
+            <h1 id="section-planos-titulo" data-anime="center">Temos o plano certo pra você!</h1>
+            <h2 id="section-planos-subtitulo" data-anime="center">Uma internet veloz, de verdade! </h2>
+            <div id="cards-planos" data-anime="right">
+                <div class="cards" data-anime="left">
+                    <h1 class="valorMegas">10<span>mega</span></h1>
+                    <div class="preco">
+                        <h1>R$<span>55,</span>00</h1>
+                        <p>por mês</p>
+                    </div>
+                    <h4>Super velocidade com o menor preço</h4>
+                    <button>Garanta já</button>
+                </div>
+                
+                <div class="cards" data-anime="left">
+                    <h1 class="valorMegas">30<span>mega</span></h1>
+                    <div class="preco">
+                        <h1>R$<span>65,</span>00</h1>
+                        <p>por mês</p>
+                    </div>
+                    <h4>Super velocidade com o menor preço</h4>
+                    <button>Garanta já</button>
+                </div>
+
+                <div class="cards" data-anime="left">
+                    <h1 class="valorMegas">60<span>mega</span></h1>
+                    <div class="preco">
+                        <h1>R$<span>80,</span>00</h1>
+                        <p>por mês</p>
+                    </div>
+                    <h4>Super velocidade com o menor preço</h4>
+                    <button>Garanta já</button>
+                </div>
+            </div>
+
+            <div id="cards-planos1" class="cards-planos1" data-anime="left">
+
+                <div class="cards" data-anime="right">
+                    <h1 class="valorMegas">100<span>mega</span></h1>
+                    <div class="preco">
+                        <h1>R$<span>99,</span>99</h1>
+                        <p>por mês</p>
+                    </div>
+                    <h4>Super velocidade com o menor preço</h4>
+                    <button>Garanta já</button>
+                </div>
+
+                <div class="cards" data-anime="right">
+                    <h1 class="valorMegas">300<span>mega</span></h1>
+                    <div class="preco">
+                        <h1>R$<span>119,</span>99</h1>
+                        <p>por mês</p>
+                    </div>
+                    <h4>Super velocidade com o menor preço</h4>
+                    <button>Garanta já</button>
+                </div>
+
+                <div class="cards" data-anime="right">
+                    <h1 class="valorMegas">400<span>mega</span></h1>
+                    <div class="preco">
+                        <h1>R$<span>149,</span>99</h1>
+                        <p>por mês</p>
+                    </div>
+                    <h4>Super velocidade com o menor preço</h4>
+                    <button>Garanta já</button>
+                </div>
+            </div>
+
+            <button id="maisplanos">Conheça todos os planos</button>
+        </section>
+
+        <!-- sessão areas de cobertura ************************************************-->
+        <section id="sessao-cobertura">
+            <div id="sessao-cobertura-titulo">
+                <h1>Cobertura</h1>
+            </div>
+            
+            <div class="locais" data-anime="left">
+                <button onmousedown="mostrar(1)" id="btn1Locais"><i class="fas fa-signal"></i><h1>Tianguá</h1></button>
+                <div class="locaisUl" id="locais1">
+                    <ul>
+                        <li>Bairro Santo Antonio</li>
+                        <li>Bairro do Estádio</li>
+                        <li>Bairro Terra Prometida</li>
+                        <li>Sitio Cedro</li>
+                        <li>Sitio Veado Seco</li>
+                        <li>Sitio Cacimbas</li>
+                        <li>Sitio Cidade</li>
+                        <li>Sitio Itaguaruna</li>
+                        <li>Sitio Bodegas</li>
+                        <li>Rodovia Cinturão Verde</li>
+                        <li>Sitio Cipó</li>
+                        <li>Sitio Olho D´agua</li>
+                        <li>Sitio Bom Jesus</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="locais" data-anime="right">
+                <button onmousedown="mostrar(2)" id="btn1Locais"><h1>Ubajara</h1><i class="fas fa-wifi"></i></button>
+                <div class="locaisUl" id="locais2">
+                    <ul>
+                        <li>Nova Veneza</li>
+                        <li>Fim do Corrego</li>
+                        <li>Sitio Itaperacema</li>
+                        <li>Sitio Tabocas</li>
+                        <li>Capelinha</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="locais" data-anime="left">
+                <button onmousedown="mostrar(3)" id="btn1Locais"><i class="fas fa-wifi"></i><h1>Viçosa do Ceará</h1></button>
+                <div class="locaisUl" id="locais3">
+                    <ul>
+                        <li>Quatiguaba</li>
+                        <li>Inharim</li>
+                        <li>Sitio Queimadas</li>
+                        <li>Sitio Santa barbara</li>
+                        <li>Sitio Baixa Grande</li>
+                        <li>Sitio Cacimbinha</li>
+                        <li>Sitio Cacimbão</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- sessão dos Equipes ******************************************************-->
+        <section id="section-Time">
+            <h1 id="section-Time-titulo">Nosso Time</h1>
+            <h2 id="section-Time-subtitulo">Conte sempre com nosso time! </h2>
+            <div id="cards-Time">
+                <div class="Equipe">
+                    <div class="imgEquipe">
+                        <img src="imagens/imgEquipe/caio.jpg">
+                    </div>
+                    <h4>Caio</h4>
+                    <h1 class="TituloEquipe"><span>Suporte</span></h1>
+                    <!-- <p class="DescriçãoEquipe">Descrição</p> -->
+                </div>
+
+                <div class="Equipe">
+                    
+                    <div class="imgEquipe">
+                        <img src="imagens/imgEquipe/micaele.jpg">
+                    </div>
+                    <h4>Micaely</h4>
+                    <h1 class="TituloEquipe"><span>Atendente</span></h1>
+                    <!-- <p class="DescriçãoEquipe">Descrição</p> -->
+                </div>
+                
+                <div class="Equipe">
+                    
+                    <div class="imgEquipe">
+                        <img src="imagens/imgEquipe/tiago.jpg">
+                    </div>
+                    <h4>Tiago</h4>
+                    <h1 class="TituloEquipe"><span>Suporte Técnico</span></h1>
+                    <!-- <p class="DescriçãoEquipe">Descrição</p> -->
+                </div>
+
+                <div class="Equipe">
+                    
+                    <div class="imgEquipe">
+                        <img src="imagens/imgEquipe/kelpson.JPG">
+                    </div>
+                    <h4>Kelpson</h4>
+                    <h1 class="TituloEquipe"><span>Gerencia</span></h1>
+                    <!-- <p class="DescriçãoEquipe">Descrição</p> -->
+                </div>
+            
+            </div>
+        </section>
+    
+        <!-- sessão de contatos ******************************************************-->
+        <section id="section-contatos-principal">
+            <div id="section-Contatos">
+                <h1 id="h1contato">Conte conosco</h1>
+                <h2>Estamos localizados pertinho de você, local de facil acesso e caso deseje pode entrar
+                    em contato pelos nossos canais de atendimento. Ficaremos felizes em atendê-lo(a).
+                </h2>
+                <ul id="listContatos">
+                    <li ><a href="#"><i class="fab fa-whatsapp-square"></i><p>(88)9 9343-0616</p></a></li>
+                    <li><a href="tel:"><i class="fas fa-phone-square-alt"></i><p>(88)9 9343-0616</p></a></li>
+                    <li><a href="edwirgens@solutiontelecom.com.br"><i class="fas fa-envelope-square"></i><p>edwirgens@solutiontelecom.com.br</p></a></li>
+                    <li><a style="cursor: text;"><i class="fas fa-map-marker-alt"></i><p>R. Odion Aguiar, 670 - Centro - Tiangua - CE - Brasil</p></a></li>
+                </ul>
+            
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.3709556941376!2d-40.99223228529366!3d-3.729051197286929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7eb4852b4da5529%3A0xf1e07fda4c1ffe0c!2sR.%20Odilon%20%C3%81guiar%2C%20670%20-%20Centro%2C%20Tiangu%C3%A1%20-%20CE%2C%2062320-000!5e0!3m2!1spt-BR!2sbr!4v1635181978909!5m2!1spt-BR!2sbr"
+                allowfullscreen="" loading="lazy">
+                </iframe>
+
+            </div>
+        </section>
+
+        <section id="midia-sociais">
+            <img src="imagens/logo_midiaSociais.png" alt="">
+            <h4>Curta nossas fan page nas Redes Sociais</h4>
+            <div id="rede-sociais">
+                <a href="https://www.facebook.com/solutiontelecomoficial"><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+            
+        </section>
+
+        <footer>© Copyright Jailson e Willian</footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
